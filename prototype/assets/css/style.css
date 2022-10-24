@@ -56,9 +56,6 @@ header.primary nav a:hover, header.primary nav a:active {
 #block {
   border: dotted;
 }
-    
-#questions {   
-}
 
 th, td {
   border: 3px solid blue;
