@@ -1,3 +1,10 @@
 body{
     background-color:rgb(177, 184, 184);
 }
+#intro{
+    margin-right: auto;
+}
+
+#jobs {
+    border-block: 5px;
+}
