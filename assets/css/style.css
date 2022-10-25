@@ -1,10 +1,8 @@
 body{
     background-color:rgb(177, 184, 184);
-}
-#intro{
-    margin-right: auto;
+    font-family: 'Libre Baskerville', serif;
 }
 
-#jobs {
-    border-block: 5px;
+main{
+    background-color:coral;
 }
