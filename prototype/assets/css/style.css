@@ -60,12 +60,14 @@ header.primary nav a:hover, header.primary nav a:active {
 
 th, td {
   border: 3px solid blue;
-}
+  }
 
 h1,h2,h3,h4,h5 {
-  color:blue;
+  color: blue;
 }
 
 img {
   border: 5px solid blue;
 }
+
+
