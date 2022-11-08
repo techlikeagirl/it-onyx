@@ -21,7 +21,8 @@ body {
 
 
 header.primary{
-background-color: #0D0D0D;
+  background-image: url(../img/photo-1602984611136-eadcc6df28fd.jpg);
+  background-color:rgba(13, 24, 84, 0.836);
     text-align:center;
     color:#ffffff;
     padding:10px;
@@ -69,4 +70,36 @@ header.primary nav a{
 
 header.primary nav a:hover, header.primary nav a:active {
   background:#590202;
+}
+
+h2{
+  text-align:center;
+}
+
+#para1{
+  color:#590202;
+  text-align: center;
+  margin: 40px 40px;
+  padding: 20px;
+}
+
+#sect2{
+  display: block;
+  background-color: #8C0303;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+#video1 {
+  display: flex;
+  justify-content: center;
+  aligh-items: center;
+  border-width: 20px;
+}
+
+.footer{
+  color:#D9CCC5;
+  text-align: center;
+  background-color:rgba(5, 6, 17, 0.932);
+  padding: 10px;
 }
