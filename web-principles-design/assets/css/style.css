@@ -93,7 +93,7 @@ h2{
 #video1 {
   display: flex;
   justify-content: center;
-  aligh-items: center;
+  align-items: center;
   border-width: 20px;
 }
 
