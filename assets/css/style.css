@@ -1,8 +1,70 @@
-body{
-    background-color:rgb(177, 184, 184);
-    font-family: 'Libre Baskerville', serif;
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+main{
+  background-color:seagreen;
+  width:100vw;
+  max-width:1140px;
+  margin:20px auto;
+  border:2px solid black;
+  border-radius:4px;
+}
+body {
+  margin: 0;
+  background-color: seagreen;
+}
+header.primary {
+  background-color:seagreen;
+  padding:70px;
+  background-image: url("https://cdn2.clickdesigns.com/users/1375/blocks/93591/final.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  display:flex;
+  justify-content:center;
+  flex-direction: row;
+  border-bottom:6px solid seagreen;
+  font-size:30px;
+  color:white;
 }
 
-main{
-    background-color:coral;
+header.primary .hgroup{
+  width:10%;
+  }
+
+.wrapper {
+  display: grid;
+  justify-content:center;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 75px;
+  background-color: seagreen;
+  color: white;
+}
+
+.box {
+  background-color: rgb(185, 154, 14);
+  color:seagreen;
+  border-color: black;
+  border-radius: 20px;
+  padding: 75px;
+  font-size: 150%;
+  text-align:center;
+}
+.box a{
+  color:rgb(15, 15, 15);
+  text-align:center;
+}
+#colophon{
+  background:black;
+  padding:20px;
+  color:white;
+  font-size:30px;
+  text-align: center;
+}
+#colophon a{
+  color:white;
 }
