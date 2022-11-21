@@ -6,14 +6,6 @@
   <meta name="description" content="Keyword rich narrative on site purpose">
   <meta name="author" content="Andrea Woodberry">
   <link href="assets/css/style.css" rel="stylesheet">
-  <form id="AndreaWoodberryForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php">
-        
-  </form>
-  <script>
-  $( "#AndreaWoodberryForm" ).validate({
-  
-  });                    
-  </script>
 </head>
 
 <body>
@@ -21,30 +13,44 @@
 <h1>New Patient Registration</h1>
 <h2>Please Fill Out The Form Below</h2>
 
-<form action="https://brucebauer.info/assets/ITEC3650/datadump.php">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+<style>
+   .error {
+        color: red;
+        padding-left: 5px;
+   }
+</style>
+<form id="AndreaWoodberryForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php">
 
     <label for="Name" class="formlabel">First Name:</label>
-    <input type="text" id="FirstName" name="FirstName"size="30" maxlength="30"><br>
+    <input type="text" id="FirstName" name="FirstName"size="30" maxlength="30"
+    data-rule-required="true" data-msg-required="First Name is Required"><label for="FirstName" class="error"></label><br>
     <label for="Middle" class="formlabel">Middle:</label>
     <input type="text" id="Middle" name="Middle" size="1" maxlength="1"><br>
     <label for="Name" class="formlabel">Last Name: </label>
-    <input type="text" id="LastName" name="LastName" size="30" maxlength="30"><br>
+    <input type="text" id="LastName" name="LastName" size="30" maxlength="30" 
+    data-rule-required="true" data-msg-required="Last Name is Required"><label for="LastName" class="error"></label><br>
     <label for="Email" class="formlabel">Email:</label>
-    <input type="email" id="Email" name="Email"size="30" maxlength="30"><br>
+    <input type="email" id="Email" name="Email"size="30" maxlength="30"
+    data-rule-required="true" data-msg-required="Email is Required"><label for="Email" class="error"></label><br>
     <label for="Sex" class="formlabel">Sex:</label>
-      <input type="radio" value="M" name="Male">Male</label>
-      <input type="radio" value="F" name="Female">Female</label>
-      <input type="radio" value="N" name="N/A">N/A</label><br>
+      <label for="Male"><input type="radio" value="M" id="Male" name="Sex" data-rule-required="true" data-msg-required="Sex is Required">Male</label>
+      <input type="radio" value="F" id="Female" name="Sex">Female</label>
+      <input type="radio" value="N" id="N/A" name="Sex">N/A</label>
+      <label for="Sex" class="error"></label><br>
+  
     <label for="Birthday" class="formlabel">Birthday:</label>
-    <input type="text" id="Birthday" name="Birthday"size="8" maxlength="8"><br>
+    <input type="text" id="Birthday" name="Birthday"size="8" maxlength="8" data-rule-required="true" data-rule-date="true" data-msg-date="Date must be MM/DD/YYYY format"><label for="Birthday" class="error"></label><br>
     <label for="Height" class="formlabel">Height:</label>
-    <input type="text" id="Height" name="Height"size="3" maxlength="3"><br>
+    <input type="text" id="Height" name="Height"size="3" maxlength="3" data-rule-required="true" data-rule-min="12" data-rule-max="120"><label for="height" class="error"></label><br>
     <label for="Weight" class="formlabel">Weight:</label>
-    <input type="text" id="Weight" name="Weight"size="3" maxlength="3"><br></section>
-
+    <input type="text" id="Weight" name="Weight"size="3" maxlength="3" data-rule-required="true" data-rule-min="10" data-rule-max="500"><label for="weight" class="error"></label><br></section>
     <section id="phoneadd" class="container">
-    <label for="Phone Number" class="formlabel">Phone Number:</label>
-    <input type="text" id="Phone Number" name="Phone Number"size="14" maxlength="14"><br>
+    <label for="PhoneNumber" class="formlabel">Phone Number:</label>
+    <input type="text" id="PhoneNumber" name="PhoneNumber"size="14" maxlength="14" data-rule-required="true" data-rule-phoneUS="true" data-msg-phoneUS="Invalid PhoneNumber"r><label for="PhoneNumber" class="error"></label><br>
+    
     <label for="Marital Status" class="formlabel">Marital Status:</label>
     <select name="Marital Status" id="Marital Status">
     <option value="">Select a Status</option>
@@ -54,9 +60,10 @@
     <option value="L">Legally Separated</option>
     <option value="W">Widowed</option></select><br>
     <label for="Address" class="formlabel">Address:</label>
-    <input type="text" id="Address" name="Address"size="30" maxlength="30"><br>
+    <input type="text" id="Address" name="Address"size="30" maxlength="30" data-rule-required="true" data-msg-required="Address is Required"><label for="Address" class="error"></label><br>
+    
     <label for="City/State/Zip" class="formlabel">City/State/Zip:</label>
-    <input type="text" id="City" name="City"size="30" maxlength="30">
+    <input type="text" id="City" name="City"size="30" maxlength="30" data-rule-required="true" data-msg-required="City/State/Zip is Required"><label for="City/State/Zip" class="error"></label>
     <select name="state" id="state">
       <option value="" selected="selected">Select a State</option>
       <option value="AL">Alabama</option>
@@ -122,5 +129,10 @@
       <div id="submit">
       <input type="submit" value="Submit Patient Form"></div>
 </form>
+<script>
+  $( "#AndreaWoodberryForm" ).validate({
+  
+  });                    
+  </script>
 </body>
 </html>
