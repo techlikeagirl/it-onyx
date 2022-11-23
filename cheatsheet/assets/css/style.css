@@ -11,7 +11,7 @@ html {
   
   body{
     font-family: 'Lato', sans-serif;
-    background:#c0c0c0;
+    background:#057465;
     padding:20px;
   }
   
@@ -34,7 +34,7 @@ html {
   }
   
   h2.section-heading{
-     border-bottom:2px solid #c0c0c0;
+     border-bottom:2px solid #057465;
   }
   
   .section-heading{
@@ -42,7 +42,7 @@ html {
   }
   
   h3.section-heading{
-    border-top:2px solid #c0c0c0;
+    border-top:2px solid #057465;
     padding-top:20px;
   }
   

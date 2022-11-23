@@ -1,70 +1,111 @@
 html {
+  background-color: rgba(128, 156, 242, 1);
   box-sizing: border-box;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2308594a' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  font-family: 'Hind Vadodara', sans-serif;
 }
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
-main{
-  background-color:seagreen;
-  width:100vw;
-  max-width:1140px;
-  margin:20px auto;
-  border:2px solid black;
-  border-radius:4px;
-}
-body {
-  margin: 0;
-  background-color: seagreen;
-}
-header.primary {
-  background-color:seagreen;
-  padding:70px;
-  background-image: url("https://cdn2.clickdesigns.com/users/1375/blocks/93591/final.png");
-  background-repeat: no-repeat;
+/* Header Info */
+  header.primary{
+  background-color:  rgba(1, 22, 63, 1);
   background-size:cover;
-  display:flex;
-  justify-content:center;
-  flex-direction: row;
-  border-bottom:6px solid seagreen;
-  font-size:30px;
-  color:white;
-}
-
-header.primary .hgroup{
-  width:10%;
-  }
-
-.wrapper {
-  display: grid;
-  justify-content:center;
-  grid-template-columns: 200px 200px 200px;
-  grid-gap: 75px;
-  background-color: seagreen;
-  color: white;
-}
-
-.box {
-  background-color: rgb(185, 154, 14);
-  color:seagreen;
-  border-color: black;
-  border-radius: 20px;
-  padding: 75px;
-  font-size: 150%;
+  font-size:2rem;
+  font-family: 'Hind Vadodara', sans-serif;
+  color:rgba(128, 156, 242, 1);
   text-align:center;
+  padding-top:60px;
 }
-.box a{
-  color:rgb(15, 15, 15);
-  text-align:center;
+
+/* Navigation Info */
+.main-nav h2{
+text-align:left;
 }
+#wrapper{
+display:grid;
+grid-gap:40px;
+line-height:3rem;
+grid-template-columns: 1fr 2fr;
+grid-template-rows:auto;
+grid-template-areas:
+"main-nav about"
+"main-nav about";
+margin:40px;
+border-bottom: dotted 2px rgba(1, 22, 63, 1);
+}
+
+.main-nav{
+grid-column-start:1;
+grid-column-end:2;
+}
+
+.main-nav ul li{
+list-style-type:none;
+}
+.main-nav ul .btn{
+font-size:1rem;
+padding:8px;
+}
+.btn{
+background-color: rgba(1, 22, 63, 1);
+color: rgba(128, 156, 242, 1);
+padding:10px;
+text-decoration:none;
+border:0;
+}
+.btn a{
+text-decoration:none;
+}
+.about{
+grid-column-start:2;
+grid-column-end:5;
+box-sizing: border-box;
+width: 100%;
+height:100%;
+border: solid rgba(1, 22, 63, 1) 5px;
+padding: 10px;
+border-radius:40px;
+}
+.about h2{
+text-align:center;
+font-size:2rem;
+font-weight:bold;
+}
+#eval{
+margin:80px;
+}
+#eval h3{
+text-align:center;
+font-size:2rem;
+}
+
+
+/* Footer Info */
 #colophon{
-  background:black;
-  padding:20px;
-  color:white;
-  font-size:30px;
-  text-align: center;
+background-color: rgba(1, 22, 63, 1);
+text-align:center;
+font-size:2rem;
+padding:10px;
+color:rgba(128, 156, 242, 1);
 }
 #colophon a{
-  color:white;
+color: rgba(128, 156, 242, 1);
 }
+
+
+
+/* Color Theme Swatches in RGBA */
+.chess-board- { color: rgba(4, 13, 38, 1); }
+.chess-board- { color: rgba(73, 109, 216, 1); }
+.chess-board- { color: rgba(128, 156, 242, 1); }
+.chess-board- { color: rgba(1, 22, 63, 1); }
+.chess-board- { color: rgba(16, 57, 140, 1); }
+
+
+/* Font Family */
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Hind Vadodara', sans-serif;
+font-family: 'Roboto', sans-serif;
