@@ -34,7 +34,6 @@ grid-template-areas:
 "main-nav about"
 "main-nav about";
 margin:40px;
-border-bottom: dotted 2px rgba(1, 22, 63, 1);
 }
 
 .main-nav{
