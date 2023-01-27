@@ -1,0 +1,78 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning Lab</title>
+    <style type="text/css">
+      /* ---------------Box Sizing----------------- */
+      html {
+        box-sizing: border-box;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+      body {
+        background-color: #ECECEC;
+        font-weight: bold;
+        font-family: Tahoma, Geneva, sans-serif;
+        color: #FFF;
+        text-align: center;
+        line-height: 24px;
+      }
+      #wrapper {
+        background-color: #FFF;
+        border: 1px solid #c0c0c0;
+        text-shadow: 2px 2px #000;
+        width:800px;
+        margin-left:auto;
+        margin-right:auto;
+        display:grid;
+        grid-template-columns:160px 160px 160px 160px 160px;
+        grid-template-rows:repeat(5,160px);
+        grid-template-areas:
+        "navy . . . teal"
+        ". . . . ."
+        ". . footer . ."
+        ". . . . ."
+        "blue . . . aqua";
+      }
+      #navy {
+        background-color: #001f3f;
+        grid-area:navy;
+      }
+      #teal {
+        background-color: #39CCCC;
+         grid-area:teal;
+      }
+      #blue {
+        background-color: #0074D9;
+         grid-area:blue;
+      }
+      #aqua {
+        background-color: #7FDBFF;
+         grid-area:aqua;
+      }
+      #footer {
+        background-color: #666;
+        grid-area:footer;
+      }
+      h1 {
+        color: #000;
+        font-weight: normal;
+        padding: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exercise</h1>
+    <section id="wrapper">
+      <div id="navy">Navy</div>
+      <div id="teal">Teal</div>
+      <div id="blue">Blue</div>
+      <div id="aqua">Aqua</div>
+      <div id="footer">Footer</div>
+    </section>
+  </body>
+  </html>
