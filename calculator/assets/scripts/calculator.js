@@ -5,13 +5,13 @@ function calculate() {
         
         /* get the operands from the form */
         var operand1 = document.getElementById("Operand1").value;
-        var operand2 = document.getElementById("Operand2").value;
-        var operand3 = document.getElementById("Operand3").value;
+        var operator = document.getElementById("Operator").value;
+        var operand3 = document.getElementById("Operand2").value;
         
         /* convert the operands from string to floating point */
         var operand1fp = parseFloat (operand1);
+        var operatorfp = parseFloat (operator);
         var operand2fp = parseFloat (operand2);
-        var operand3fp = parseFloat (operand3);
         
         /* figure out which operator was checked and place the value in operator */
         var operator;
@@ -67,15 +67,11 @@ function clearform() {
     
     /* Set all of the form values to blank or false */
     document.getElementById("Operand1").value = "";
+    document.getElementById("Operator").value = "";
     document.getElementById("Operand2").value = "";
-    document.getElementById("Operand3").value = "";
     document.getElementById("Operand1Error").innerHTML = "";
-    document.getElementById("Operand2Error").innerHTML = "";
-    document.getElementById("Operand3Error").innerHTML = "";
-    document.getElementById("MinOperator").checked = false;
-    document.getElementById("MaxOperator").checked = false;
-    document.getElementById("AvgOperator").checked = false;
     document.getElementById("OperatorError").innerHTML = "";
+    document.getElementById("Operand2Error").innerHTML = "";
     document.getElementById("Result").innerHTML = "";
 }
 
