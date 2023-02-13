@@ -33,13 +33,13 @@ function calculate() {
     }
 }
 
-async function CalculateResult(operand1, operator, operand2) {
+async function CalculateResult(operand1, Unit, Unit1) {
         
         // URL and method used with AJAX Call
-        var myURL = "https://brucebauer.info/assets/ITEC3650/ajaxcalculator.php";
+        var myURL = "https://brucebauer.info/assets/ITEC3650/unitsconversion.php";
 
         /* AJAX calculator requires Operand1, Operator, and Operand2 */
-        myURL = myURL + "?Operand1=" + encodeURIComponent(operand1) + "&Operator=" + encodeURIComponent(operator) + "&Operand2=" + encodeURIComponent(operand2);
+        myURL = myURL + "?Operand1=" + encodeURIComponent(operand1) + "&centunit=" + encodeURIComponent(operator) + "&centunit1=" + encodeURIComponent(operand2);
 
         /* fetch the results */
         let myCalcObject = await fetch(myURL);
