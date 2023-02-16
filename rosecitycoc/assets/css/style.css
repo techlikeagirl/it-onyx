@@ -8,3 +8,25 @@ html {
   *:after {
     box-sizing: inherit;
   }
+  .cf {
+    zoom: 1;
+  }
+  .cf:before,
+  .cf:after {
+    content: "";
+    display: table;
+  }
+  .cf:after {
+    clear: both;
+  }
+  main{
+    width:80vw;
+    margin:20px auto;
+    border:1px solid #000;
+  }
+  header.primary, footer.primary{
+    width:95.81%;
+    margin:2.09%;
+    float:left;
+    padding:2.18%;
+  }
