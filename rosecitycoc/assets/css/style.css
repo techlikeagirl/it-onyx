@@ -166,6 +166,141 @@ color: white;
 {
   color:black;
 }
+/* Ministry Page*/
+.bio{
+  display:flex;
+  margin-right:30px;
+  margin-top:30px;
+  margin-bottom:20px;
+  padding-top:50px;
+  padding-bottom:30px;
+}
+.bio .bio1{
+  margin-right:40px;
+  text-align:left;
+  margin-bottom:40px;
+}
+.bio img{
+  max-width:600px;
+  max-height:400px;
+  margin-left:40px;
+}
+img{
+  max-width:100%;
+}
+.ministry{
+  display:grid;
+  grid-template-columns:repeat(3,fr);
+  grid-template-rows:repeat(2,fr);
+  grid-gap:50px;
+  grid-template-areas:
+  "a b c"
+  "d e f";
+}
+.a{
+  grid-template-area:a;
+  padding-right:20px;
+  text-overflow:10px;
+}
+.b{
+  grid-template-area:b;
+}
+.c{
+  grid-template-area:c;
+}
+.d{
+  grid-template-area:d;
+}
+.e{
+  grid-template-area:e;
+}
+.f{
+  grid-template-area:f;
+}
+/* Live Page */
+.live{
+  margin-left:130px;
+}
+.live img{
+  margin:20px;
+  padding:20px;
+  border:10px dotted black;
+}
+.livegrid{
+  display:grid;
+  margin-top:40px;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows:1fr 1fr;
+  grid-gap:30px;
+  grid-template-areas:
+  "give prayer"
+  "give prayer";
+}
+.give{
+  grid-template-areas:give;
+}
+.prayer{
+  grid-template-areas:prayer;
+  border:5px solid black;
+ 
+}
+h2{
+  text-align:center;
+}
+.news{
+  display:grid;
+  grid-template-columns:repeat(3,350px);
+  grid-template-rows:1fr;
+  grid-gap:50px;
+  grid-template-areas:
+  "news1 news2 news3";
+}
+.news1{
+  grid-template-areas:news1;
+  margin:30px;
+  border:5px solid black;
+  text-align:center;
+}
+.news2{
+  grid-template-areas:news2;
+  margin:30px;
+  border:5px solid black;
+  text-align:center;
+}
+.news3{
+  grid-template-areas:news3;
+  margin:30px;
+  border:5px solid black;
+  text-align:center;
+}
+/* Contact Page */
+header.primary h2{
+  color:black;
+}
+aside .info {
+  display:flex;
+}
+aside article.widget{
+  flex:0 0 50%;
+}
+aside .widget:first-of-type{
+  border-right:1px dotted #000;
+  padding-right:40px;
+  padding-left:40px;
+  margin:40px;
+  align-content:center;
+  font-size:20px;
+}
+aside .widget:last-of-type{
+  padding-left:40px;
+  margin:40px;
+  align-content:center;
+  font-size:20px;
+}
+
+
+
+/*Footer Info*/
 #colophon{
   font-size:30px;
   text-align:center;
