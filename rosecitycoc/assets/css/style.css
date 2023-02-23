@@ -230,7 +230,7 @@ img{
   display:grid;
   margin-top:40px;
   grid-template-columns:1fr 1fr;
-  grid-template-rows:1fr 1fr;
+  grid-template-rows:1fr;
   grid-gap:30px;
   grid-template-areas:
   "give prayer"
