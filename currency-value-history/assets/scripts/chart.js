@@ -53,7 +53,7 @@ async function GetStock1() {
                     "type":"line",
                     "data": {
                         "labels": stockdate,
-                        "datasets":[{"label":"Stock Close",
+                        "datasets":[{"label":BaseCurrency + " to " + ConvertCurrency,
                         "data": stockvalue,
                         "fill":false,
                         "borderColor":"rgb(75, 192, 192)",
