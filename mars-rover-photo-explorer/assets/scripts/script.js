@@ -1,0 +1,12 @@
+$( "#CircleForm").validate({
+
+});
+
+function calculate() {
+
+}
+
+
+
+
+
