@@ -1,13 +1,28 @@
 body{
-    width:956px;
-    border:1px solid black;
+    width:800px;
+    background-image: linear-gradient(to right bottom, #260a76, #2a1f8a, #2d319f, #2e43b4, #2e54c9, #2864d2, #2974da, #3083e1, #4992db, #659fd3, #83abca, #a2b5c2);
     padding:20px;
-    margin:0;
+    margin-left:auto;
+    margin-right:auto;
 }
 table, th, td {
-  border: 1px solid;
+  border: 2px solid #260a76;
+  font-size:45px;
 }
 .error {
     color: red;
     padding-left: 5px;
+}
+h1{
+  font-size:50px;
+  text-align:center;
+}
+#numberofphotos{
+  display: grid;
+  grid-template-columns:repeat(5,150px);
+  grid-gap:40px;
+  margin:20px;
+}
+img{
+  max-width:150px;
 }

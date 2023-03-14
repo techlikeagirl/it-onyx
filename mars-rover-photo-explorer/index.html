@@ -11,24 +11,7 @@
 </head>
 
 <body>
-    <form id="CircleForm" onsubmit="return false">
-        <h2>Circle</h2>
-            <label for="radius" class="formlabel">Enter radius of the circle:</label>
-            <input type="text" id="radius" name="radius"
-                   data-rule-required="true"  data-msg-required="Radius is Required" 
-                   data-rule-number="true" data-msg-number="Radius must be floating point number"
-                   data-rule-min="0" data-msg-min="Radius must be greater than zero">
-            <label for="radius" class="error" id="radiuserror"></label>
-            <br>
-            <label for="diameter" class="formlabel">Diameter:</label>
-            <span id="diameter"></span><br>
-            <label for="circumference" class="formlabel">Circumference:</label>
-            <span id="circumference"></span><br>
-            <label for="area" class="formlabel">Area:</label>
-            <span id="area"></span><br>
-    
-    
-        <div class="formcontainer">
+    <form id="RoverForm" onsubmit="return false">
     <h1>Mars Rover Photo Explorer</h1><br>
     <table>
         <tr>
@@ -55,27 +38,53 @@
     <h2>Select a rover and a picture date:</h2>
         <label class="formlabel">Rover: </label>
             <label for="Curiosity">
-                <input type="radio" name="Rover" id="Curiosity" value="Curiosity"
+                <input type="radio" name="Rover" id="Curiosity" value="curiosity" 
                        data-rule-required="true" data-msg-required="A Rover is Required">Curiosity</label>
             <label for="Opportunity">
-                <input type="radio" name="Rover" id="Opportunity" value = "Opportunity">Opportunity
+                <input type="radio" name="Rover" id="Opportunity" value = "opportunity" >Opportunity
             </label>
             <label for="Spirit">
-                <input type="radio" name="Rover" id="Spirit" value = "Spirit">Spirit
+                <input type="radio" name="Rover" id="Spirit" value = "spirit">Spirit
             </label>
             <label for="Rover" class="error" id="Rovererror"></label><br>
-
-
-
-        <label class="formlabel">Picture Date: </label>
-        <input type="text" name="PictureDate" id="PictureDate" 
+            <label class="formlabel">Picture Date: </label>
+            <input type="date" name="PictureDate" id="PictureDate" 
             data-rule-required="true" data-msg-required="Date is Required">
-        <label id="PictureDateError" for="PictureDate" class="error"></label><br><br>
+            <label id="PictureDateError" for="PictureDate" class="error"></label><br><br>
 
         
-        <input type="submit" value="Calculate" id="btnCalc" onclick="displayCircle()">
-        <input type="submit" value="Clear" id="btnClear" onclick="clearForm()" formnovalidate>
-    </form>
+        <input type="submit" value="Search" id="btnCalc" onclick="myfunction()">
+        <input type="submit" value="Clear" id="btnClear" onclick="ClearForm()"><br><br>
+        Number of photos found: <div class="wrapper2"><span id="numberofphotos"></span>
+        <hr>
+        <h3>Click a photo to display full size</h3>
+        <img id="image0">
+        <img id="image1">
+        <img id="image2">
+        <img id="image3">
+        <img id="image4">
+        <img id="image5">
+        <img id="image6">
+        <img id="image7">
+        <img id="image8">
+        <img id="image9">
+        <img id="image10">
+        <img id="image11">
+        <img id="image12">
+        <img id="image13">
+        <img id="image14">
+        <img id="image15">
+        <img id="image16">
+        <img id="image17">
+        <img id="image18">
+        <img id="image19">
+        <img id="image20">
+        <img id="image21">
+        <img id="image22">
+        <img id="image23">
+        <img id="image24">
+        </div>
+       </form>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>

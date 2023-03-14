@@ -239,14 +239,18 @@ img{
 }
 .give{
   grid-template-areas:give;
+  padding-top:60px;
 }
 .prayer{
   grid-template-areas:prayer;
-  border:5px solid black;
- 
+  border:2px solid black;
+  margin:20px;
 }
 h2{
   text-align:center;
+}
+h3{
+  font-size:20px;
 }
 .news{
   display:grid;
