@@ -145,7 +145,6 @@ h2{
   /* Set Max Content Width */
   max-width:500px;
 }
-
 /* Customize Previous/Next/Dots/Autoplay */
 
 .slick-autoplay-toggle-button,
@@ -331,12 +330,21 @@ aside .widget:last-of-type{
   font-size:20px;
 }
 
-
-
 /*Footer Info*/
 #colophon{
   font-size:30px;
   text-align:center;
+}
+@media screen and (max-width:450px){
+  header.primary{
+    display:flex;
+    flex-direction:column;
+    margin:20px;
+  }
+  .replace-scott a{
+    display:block;
+    max-width:450px;
+  }
 }
 
 
