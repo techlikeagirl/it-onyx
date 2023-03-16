@@ -41,9 +41,9 @@ async function myfunction() {
             document.getElementById("image" + i).src = msg.photos[i].img_src;
             document.getElementById("image" + i).title = msg.photos[i].camera.full_name;
             }
-        }
-        
+        }  
      }  
+     
 function ClearForm() {
     document.getElementById("Curiosity").value = "";
     document.getElementById("Opportunity").value = "";
