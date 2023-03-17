@@ -15,40 +15,53 @@
   <script src="https://kit.fontawesome.com/29f01eedcc.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
+    <main class="cf">
         <nav>
             <div class="logo"><img src="assets/img/logo.png" alt="My Logo Tech Like A Girl"></div>
-            <ul class="navItems">
+            <div class="links">
+              <a href="https://www.linkedin.com/in/andreaewoodberry/"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.facebook.com/itechlikeagirl"><i class="fa-brands fa-square-facebook"></i></a>
+              <a href="https://www.instagram.com/itechlikeagirl/"><i class="fa-brands fa-square-instagram"></i></a></div>
+            </nav>
+            <section class="links1">
+            <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="#reflections">Reflections</a></li>
                 <li><a href="#projects">Projects</a></li>
             </ul>
-            <div class="links">
-                <a href="https://www.linkedin.com/in/andreaewoodberry/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.facebook.com/itechlikeagirl"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="https://www.instagram.com/itechlikeagirl/"><i class="fa-brands fa-square-instagram"></i></a>
-            </div>
-        </nav>
-        </div>
-        <!--Navigation-->
-        <div class="wrapper">
-            <div class="cols cols0">
-                <span class="topline">Andrea Woodberry, MBA</span><br>
-                <h1>Your <span class="multitext"></span></h1><br>
+            </section>   
+        <!--Content-->
+        <section class="wrapper">
+              <div class="imgbox">
+              <img src="/assets/img/me.png" alt="picture of Andrea">
+              </div>
+            <div class="name">
+                <span class="topline">Andrea Woodberry, MBA</span></div><br>
+                <div class="multitext">
+                <h1>Your <span class="multitext"></span></h1></div><br>
+                <div class="about">
                 <h2>About Andrea</h2>
-                <p>Andrea Woodberry, MBA is an IT professional with a skillset that is in demand for modern technology. Her skillset expertise in user-centered design helps deliver optimal experiences for a brand's audience in their industry.</p><br>
+                <p>Andrea Woodberry, MBA is an IT professional with a skillset that is in demand for modern technology. Her skillset expertise in user-centered design helps deliver optimal experiences for a brand's audience in their industry.</p></div><br>
+                <div class="vision">
                 <h2>My Vision:</h2>
-                <p>To be an invaluable resource for businesses by helping them establish authority and create the ultimate user experience with their products and services and meeting the need and satisfaction of their customers.</p><br>
+                <p>To be an invaluable resource for businesses by helping them establish authority and create the ultimate user experience with their products and services and meeting the need and satisfaction of their customers.</p></div><br>
+                <div class="mission">
                 <h2>My Mission:</h2>
-                <p>It is my mission to exceed business' expectations by not only helping them make their user's experience TOP PRIORITY but will also achieve greater ROI through the use of digital and mobile motivated tools, making their branded products and services easily accessible and more desirable.</p><br>
-            </div>
-            <div class="cols cols1">
-                <div class="imgbox">
-                    <img src="/assets/img/me.png" alt="picture of Andrea" id="splash">
-                </div>
-            </div>
-        </div>
-        <h1>Projects</h1>
-        <div id="projects">
+                <p>It is my mission to exceed business' expectations by not only helping them make their user's experience TOP PRIORITY but will also achieve greater ROI through the use of digital and mobile motivated tools, making their branded products and services easily accessible and more desirable.</p></div><br>
+            </section>
+        <section id="reflections">
+          <h1>Reflections:</h1>
+          <article class="widget">
+            <h1>Sample Sidebar Item </h1>
+            <p>Quisque justo erat, varius placerat fermentum vel, iaculis vel ligula. Phasellus et elit purus. Curabitur ipsum enim, scelerisque vitae condimentum ac, cursus eget quam. Nullam volutpat dui ut risus pulvinar at fringilla sem tristique. Nulla facilisi. Donec posuere euismod purus, eu scelerisque risus pellentesque eu. Vestibulum sed tincidunt metus. <a href="#">Read More</a>&raquo;</p>
+          </article>
+          <article class="widget">
+            <h1>Sample Sidebar Item </h1>
+            <p>Quisque justo erat, varius placerat fermentum vel, iaculis vel ligula. Phasellus et elit purus. Curabitur ipsum enim, scelerisque vitae condimentum ac, cursus eget quam. Nullam volutpat dui ut risus pulvinar at fringilla sem tristique. Nulla facilisi. Donec posuere euismod purus, eu scelerisque risus pellentesque eu. Vestibulum sed tincidunt metus. <a href="#">Read More</a>&raquo;</p>
+          </article>
+        </section>
+        <aside id="projects">
+        <h1>Projects:</h1>
       <ul>
           <li><a href="cheatsheet/index.html">HTML Cheatsheet</a><br>
           <li><a href="prototype/index.html">Prototype</a><br>
@@ -76,9 +89,8 @@
             <li><a href="mars-rover-photo-explorer/index.html">Mars Rover Photo Explorer Exercise</a><br><br><br><br>
             </li>
             </ul>
-          
-          </div>
-          <footer id="colophon">
+        </aside>
+          <footer>
             <h6>&copy; 2023 Andrea Woodberry | <a href="mailto:aewoodberry@ualr.edu">Email Me</a> | <a href="#top">Back to Top</a></h6>
           </footer>
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -90,6 +102,7 @@
             backSpeed:80,
             backDelay:1500,
         })
-        </script>       
+        </script> 
+    </main>      
   </body>
   </html>
