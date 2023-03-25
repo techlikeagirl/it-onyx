@@ -231,10 +231,38 @@ nav a:hover{
     background-color:rgba(176,178,182,1.00);
     width:100%;
   }
+  /*--Ministry Page--*/
+  .ministry{
+    width:90%;
+    padding:20px;
+    margin:100px auto;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+  }
+  .box{
+    width:250px;
+    margin:0, 10px;
+    box-shadow:0 0 20px 2px rgba(0,0,0,.1);
+    transition:1s;
+  }
+  .box img{
+    display:block;
+    width:100%;
+    border-radius:5px;
+  }
+  .box:hover{
+    transform:scale(1.3);
+    z-index:2;
+  }
+
 /*Mobile Version*/
 /*Navigation*/
 @media screen and (min-width:200px) and (max-width:450px){
-    
+    body{
+    height:200vh;
+    background-image: linear-gradient(to bottom, #726b5c, #7b7466, #857d70, #8e877b, #989085, #9c8d7b, #a08971, #a48567, #a4714a, #a55a31, #a53f1e, #a51313);
+    }
     header{
         display:grid;
         grid-template-columns:1fr;
@@ -248,14 +276,13 @@ nav a:hover{
     nav{
         display:flex;
         grid-column:1 / 3;
-       
-        justify-content:flex-end;
+        justify-content:space-between;
         align-items:center;
     }
     nav ul{
         display:flex;
         justify-content:flex-end;
-        border:1px solid red;
+        
     }
     nav li{
         margin-left:3em;
@@ -303,5 +330,34 @@ nav a:hover{
         color:red;
     }
     /*Ministry Page*/
-    
+    h2{
+        padding-top:30px;
+    }
+    .bio{
+        width:100%; 
+    }
+    .ministry{
+        width:100%;
+        padding:20px;
+        margin:100px auto;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        background-image: linear-gradient(to bottom, #726b5c, #7b7466, #857d70, #8e877b, #989085, #9c8d7b, #a08971, #a48567, #a4714a, #a55a31, #a53f1e, #a51313);
+      }
+      .box{
+        width:100%;
+        margin:0, 10px;
+        box-shadow:0 0 20px 2px rgba(0,0,0,.1);
+        transition:1s;
+      }
+      .box img{
+        display:block;
+        width:100%;
+        border-radius:5px;
+      }
+      .box:hover{
+        transform:scale(1.3);
+        z-index:2;
+      }
 }
