@@ -234,9 +234,7 @@ nav a:hover{
 /*Mobile Version*/
 /*Navigation*/
 @media screen and (min-width:200px) and (max-width:450px){
-    .nav-toggle-label{
-        display:none;
-    }
+    
     header{
         display:grid;
         grid-template-columns:1fr;
@@ -300,9 +298,10 @@ nav a:hover{
         color:#000000;
         margin-top:20px;
         height:100%;
-        
       }
     .values .container{
         color:red;
     }
+    /*Ministry Page*/
+    
 }
