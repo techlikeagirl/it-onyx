@@ -190,7 +190,7 @@ nav a:hover{
   img{
     max-width:100%;
   }
-  h2,h3{
+  h2{
     text-align:center;
     font-size:30px;
     color:#000000;
@@ -226,7 +226,7 @@ nav a:hover{
   {
     color:black;
   }
-  footer{
+  colophon{
     font-size:15px;
     text-align:center;
     background-color:rgba(176,178,182,1.00);
@@ -263,7 +263,17 @@ nav a:hover{
     margin-bottom:80px;
   }
   /*--Contact Page--*/
-
+.contact{
+    padding-top:30px;
+}
+.info{
+    display:grid;
+    grid-template-column;1fr;
+}
+.info .widget{
+    grid-column-start:1;
+    grid-column-end:2;
+}
 
 /*Mobile Version*/
 /*Navigation*/
@@ -339,7 +349,7 @@ nav a:hover{
         color:red;
     }
     /*Ministry Page*/
-    h2{
+    h2,h3{
         padding-top:30px;
         padding-bottom:30px;
     }
