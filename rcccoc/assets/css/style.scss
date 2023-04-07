@@ -1,23 +1,47 @@
+body{
+    background-image: linear-gradient(to bottom, #726b5c, #7b7466, #857d70, #8e877b, #989085, #9c8d7b, #a08971, #a48567, #a4714a, #a55a31, #a53f1e, #a51313);
+    margin:10px;
+    padding:10px;
+    box-sizing:border-box;
+}
+/*--home page--*/
 .hero{
     background-image:url('../img/hero.jpg');
     background-size:cover;
     color:white;
-    margin-top:0;
+    padding:0;
 }
 .history{
-    margin-top:40px;
+    margin-top:20px;
     padding-top:20px;
     padding-bottom:20px;
     background-color: rgb(187,45,59);
 }
+.history h2,h4{
+    text-align:center;
+}
+.history p{
+    margin:20px;
+}
 .values{
-    margin-top:40px;
-    padding-top:40px;
-    padding-bottom:40px;
+    margin-top:20px;
+    padding-top:20px;
+    padding-bottom:20px;
     background-color: rgb(189, 165, 167);
+}
+.values h2{
+    text-align:center;
+}
+.values h4{
+    text-align:left;
+    margin:20px;
+}
+.values p{
+    margin:20px;
 }
 .map{
     padding-top:20px;
+    padding-bottom:20px;
 }
 .map h2{
     text-align:center;
@@ -28,4 +52,19 @@
     color:white;
     text-align:center;
     padding-top:20px;
+}
+/* Contact Page */
+.error {
+    color: red;
+    padding-left: 5px;
+}
+.formlabel {
+    display:inline-block;
+    width: 150px;
+    text-align: left;
+    padding: 5px;
+    font-weight: bold;
+}
+.rosecityform{
+    padding:40px;
 }

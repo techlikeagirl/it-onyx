@@ -4,40 +4,64 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Andrea Woodberry">
-    <title>Bootstrap demo</title>
+    <title>Rose City Community COC Website</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
   <script src="https://kit.fontawesome.com/29f01eedcc.js" crossorigin="anonymous"></script>
   </head>
   <body>
-<!--Nav Bar-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" "navbar bg-dark" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src='assets/img/logo.png' alt=''></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Ministry</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+      <div class="container">
+        <div><a class="navbar-brand" href="index.html"><img class="img-fluid" src="assets/img/rosecitylog.png" alt="Rose City logo"></a></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExample01">
+          <ul class="navbar-nav me-auto mb-2">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="ministry.html">Ministry</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+            </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-      </nav>
-
-
+      </div>
+    </nav>
+    <!--Contact Us Form-->
+    <section class="rosecityform">
+      <h2>Have Questions???? Please Fill Out Form Below!</h2>
+      <form id="rosecityform" action="https://brucebauer.info/assets/ITEC3650/datadump.php">
+        <label for="FName" class="formlabel">First Name:</label>
+    <input type="text" id="FName" name="FirstName" size="50" maxlength="50"
+    data-rule-required="true" data-msg-required="First Name is Required"><label for="FName" class="error"></label><br>
+    <label for="LName" class="formlabel">Last Name: </label>
+    <input type="text" id="LName" name="LastName" size="50" maxlength="50" 
+    data-rule-required="true" data-msg-required="Last Name is Required"><label for="LName" class="error"></label><br>
+    <label for="Email" class="formlabel">Email:</label>
+    <input type="email" id="Email" name="Email" size="50" maxlength="50"
+    data-rule-required="true" data-msg-required="Email is Required"><label for="Email" class="error"></label><br>
+    <label for="PhoneNumber" class="formlabel">Phone Number:</label>
+    <input type="text" id="PhoneNumber" name="PhoneNumber" size="50" maxlength="50" data-rule-required="true" data-rule-phoneUS="true" data-msg-phoneUS="Invalid PhoneNumber"><label for="PhoneNumber" class="error"></label><br>
+    <label class="formlabel">Message:</label>
+      <textarea rows="3" cols="53" name="Message" id="message" wrap="hard"></textarea><br><br>
+      <div id="submit">
+      <input type="submit" value="Submit Your Message Here"></div>
+      </form>
+    </section>
+    <
     <!--Footer-->
     <footer id="colophon">
         <h6>&copy; 2023 Rose City Community Church of Christ | <a href="mailto:admin@therose4cs.org">Contact Us!</a> | <a href="#top">Back to Top</a></h6><h3>Powered By: TechLikeAGirl</h3>
       </footer>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
   </body>
   </html>
