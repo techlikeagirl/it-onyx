@@ -1,1 +1,36 @@
-/*# sourceMappingURL=style.css.map */
+.hero {
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  color: white;
+  margin-top: 0;
+}
+
+.history {
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(187, 45, 59);
+}
+
+.values {
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: rgb(189, 165, 167);
+}
+
+.map {
+  padding-top: 20px;
+}
+
+.map h2 {
+  text-align: center;
+  color: rgb(187, 45, 59);
+}
+
+#colophon {
+  background-color: rgb(33, 37, 41);
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}/*# sourceMappingURL=style.css.map */
