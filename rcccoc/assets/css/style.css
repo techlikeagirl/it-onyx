@@ -62,6 +62,42 @@ body {
   padding-top: 20px;
 }
 
+/*--Ministry Page--*/
+.scripture {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.minister .row {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image: linear-gradient(to bottom, #726b5c, #7b7466, #857d70, #8e877b, #989085, #9c8d7b, #a08971, #a48567, #a4714a, #a55a31, #a53f1e, #a51313);
+}
+
+.minister h2 {
+  text-align: center;
+  color: rgb(187, 45, 59);
+}
+
+.minister p {
+  margin: 20px;
+}
+
+.ministry {
+  display: flex;
+}
+
+.ministries h2 {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.row {
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
 /* Contact Page */
 .error {
   color: red;
@@ -77,5 +113,5 @@ body {
 }
 
 .rosecityform {
-  padding: 40px;
+  margin: 40px;
 }/*# sourceMappingURL=style.css.map */
