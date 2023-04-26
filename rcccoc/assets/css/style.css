@@ -7,7 +7,8 @@ body {
   background-image: url("../img/hero.jpg");
   background-size: cover;
   color: white;
-  padding: 0;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .history {
@@ -78,6 +79,8 @@ h1 {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
+  margin-right: 60px;
+  margin-left: 60px;
 }
 
 .minister .row {
@@ -98,6 +101,10 @@ h1 {
 
 .ministry {
   display: flex;
+}
+
+.col-md-5 img {
+  max-width: 80%;
 }
 
 .ministries {
