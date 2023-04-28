@@ -1,0 +1,405 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+/* body css */
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #D9D9D9;
+}
+
+/* header css */
+
+header.primary-1 {
+  height: 80px;
+  background-color: #6AAED9;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* navbar css */
+
+.desktop-nav-main-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.desktop-nav-it {
+  list-style-type: none;
+  display: inline-block;
+  padding-top: 20px;
+}
+
+.desktop-nav-li {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 20px;
+  text-shadow: 2px 2px #000000;
+  transition: all 0.3s ease-in-out;
+  padding-top: 20px;
+
+}
+
+.desktop-nav-li:hover {
+  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+  transition: all 0.3s ease-in-out;
+}
+
+.brand img {
+   width: 300px;
+   margin-top: -8px;
+   height: auto;
+}
+
+#myLinks {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  background-color: #6AAED9;
+  width: 100%;
+  text-align: center;
+  height: 40px;
+  display: none;
+}
+
+.mobile-li {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 17px;
+  color: white;
+  font-size: 20px;
+}
+
+.hamburger {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 50px;
+}
+
+
+
+/* cabins css */
+
+#cabin {
+    display: flex;
+    justify-content: center;
+    margin: 40px 20px;
+    margin-right: 0;
+    gap: 20px;
+}
+
+.content-wrap {
+    display: flex;
+    gap: 150px;
+    text-align: center;
+    background-color: #6AAED9;
+    padding: 20px;
+    margin-right: 30px;
+}
+
+.heading-cont-1 {
+    font-size: 20px;
+    line-height: 80px;
+    min-width: 150px;
+    font-weight: 550;
+}
+
+.heading-cont-2 {
+    font-size: 18px;
+    margin-left: -40px;
+}
+
+.heading-cont-2 ul li{
+    text-align: left;
+}
+
+#cabin-reserve,
+#canoe-reserve {
+  margin: 0 160px;
+}
+
+#canoe-reserve {
+    padding-bottom: 30px;
+}
+
+.cabin-header,
+.canoe-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  font-size: 25px;
+}
+
+/* slideshow css */
+
+img{
+    max-width:100%;
+}
+
+.slider-nav,
+.slider-for{
+    margin:0 30px;
+    width:550px;
+}
+
+/* Customize Previous/Next/Dots/Autoplay */
+
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+  color: black;
+}
+
+/* Customize Previous/Next/Dots/Autoplay - Active State */
+
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus 
+{
+    color:black;
+}
+
+.ext-link {
+  color: #000000;
+  display: inline-block;
+}
+
+.ext-link:hover {
+  text-decoration: none;
+}
+
+.canoe-tag {
+  text-align: center;
+  font-size: 25px;
+  margin: 20px;
+  padding-bottom: 30px;
+}
+
+/* content css */
+#content{
+  margin:auto;
+  padding:auto;
+  text-align:center;
+  align-content: center;
+
+}
+
+#About{
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  ),url('../img/DSC02499.jpg');
+  width: 100%;
+  padding: 0 7%;
+  margin: 0;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height:auto;
+}
+
+.text{
+text-align:center;
+color: #ffffff;
+text-decoration: none;
+font-size: 20px;
+text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+font-weight:200;
+}
+
+
+#water{
+text-align:center;
+color: #ffffff;
+text-decoration: none;
+font-size: 20px;
+text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+font-weight:200;
+  margin:auto;
+  padding:auto;
+  text-align:center;
+  height: auto;
+  background-color:#8EE5EF;
+}
+
+/* footer css */
+
+aside[role="complementary"] {
+background: #6AAED9;
+margin:auto;
+padding:auto;
+text-align:center;
+color: #ffffff;
+text-decoration: none;
+font-size: 20px;
+text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+font-weight:200;
+}
+
+
+aside .detail {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+aside article.widget {
+width: 100%;
+}
+
+aside article.widget footer {
+display: none;
+}
+
+.socials {
+text-align:center;
+background: #6AAED9;
+color: white;
+font-size: 20px;
+}
+
+.socials a {
+  color: white;
+}
+
+.phone {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* river gauge css */
+
+.justify {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* about css */
+
+.about-jumbo {
+  background-image: url('../img/DSC02499.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+}
+
+.about-jumbo h1 {
+  font-size: 100px;
+}
+
+.about-cont {
+  margin: 0 auto;
+  max-width: 1000px;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  line-height: 40px;
+}
+
+.about-p-btm {
+  padding-top: 30px;
+}
+
+
+/*  media css */
+
+@media screen and (max-width: 1160px) {
+    #cabin {
+        flex-direction: column;
+    }
+    
+    .content-wrap {
+      margin-left: -20px;
+      display: flex;
+      justify-content: center;
+      margin-right: 0;
+    }
+
+    .slideshow-wrap {
+      margin: 0 auto;
+    }
+
+    aside .detail {
+      flex-direction: column;
+    }
+}   
+
+@media screen and (max-width: 640px) {
+  .slider-for,
+  .slider-nav {
+    width: 350px;
+  }
+
+  .content-wrap {
+    flex-direction: column;
+  }
+
+  .map {
+    width: 300px;
+    height: 300px;
+  }
+
+  #cabin-reserve,
+  #canoe-reserve {
+  margin: 0 30px;
+}
+
+.heading-cont-2 ul li{
+  text-align: center;
+  list-style-type: none;
+}
+}   
+
+@media screen and (max-width: 1060px) {
+  .hamburger {
+    display: block;
+  }
+  
+  .main-nav-1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .slider-for,
+  .slider-nav {
+    width: 330px;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  #myLinks {
+    height: 70px;
+  }
+}
